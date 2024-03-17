@@ -21,15 +21,15 @@
     <!--stylesheet-->
     <link rel="stylesheet" href="assets/CSS/styles.css" 
 
-</head>
+     </head>
 
-<body>
+    <body>
 
     <!--Header-->
     <header id="header">
 
         <h1></br>Byrne </br>Accident </br>investigations</h1>
-        <h2> Accidents Happen we resolve them</h2>
+        <h2> Accidents happen, but we resolve them</h2>
 
         <!--Navigation bar-->
         <nav id=" navbar">
@@ -40,6 +40,8 @@
             </ul>
         </nav>
 
+     </header>
+
         <main>
             <!--the main image for the site -->
             <section id="hero-image">
@@ -47,15 +49,15 @@
                     <img src="assets/images/car-accidents.webp"  alt="lady after motor accident">
                     
 
-                    <p id="about us">
-                        About Us
-                    </p>
+                    <p id="about-us">
+                        About Us </p>
+
                    <div id="text"> <p>Byrne Accident Investigations was established in 1999 and has grown to be at the forefront of
                         claims investigations. <br>We work on behalf of Insurance companies and the MIBI to provide a
-                        nationwide service tailored to the requirements of our valued clients.
+                        nationwide service tailored to the requirements of our valued clients.</div>
 
 
-                        <br>We specialise in Motor, Employers Liability and Public Liability claims investigation.
+                        <div><br>We specialise in Motor, Employers Liability and Public Liability claims investigation.</div>
 
 
                         <br>Our investigative staff include CIP qualified personnel with over forty years claims
@@ -72,22 +74,65 @@
             </section>
 
             <section>
-                <h6 id="contact us">Contact us</h6>
+                <h4 id="contact us">Contact us</h4>
                 <h6 id="form message">DROP US A MESSAGE</h6>
             </section>
 
             <section>
-                 <form>
-                    <label>First Name</label>
-                    <input type="text"
-                 </form>
-                 
+
+                <!--Form-->
+
+        <section id="eform">
+
+            <form action="action_page.php" method="GET">
+                <div>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="firstname" placeholder=" Name" maxlength="30"
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Sname">Surname:</label>
+                    <input type="text" id="Sname" name="Surname" placeholder=" Surname" maxlength="30"
+                </div>
+                
+                <br>
+
+                <div>
+                    <label for="Email">Email Address</label>
+                    <input type="text" id=" Email address" name=" email address" placeholder=" E-mail" maxlength="200"
+                </div>
+
+                <br>
+
+                <div>
+                    <input type="reset"
+
+                </div>
+
+                <br>
+
+                <div>
+                    <input type="submit"
+
+                </div>
+
+
+
             </section>
-        </main>
+                    
+
+                    
+
+            </form>
 
 
-    </header>
+
 
 </body>
+
+<footer> </footer>
+
 
 </html>
