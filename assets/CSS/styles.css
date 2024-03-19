@@ -1,20 +1,22 @@
 /* Header styling */
 header {
-    background-color: rgb(221, 190, 190);
-    padding: 20px;
+    background-color: rgba(232, 240, 242, 0.841);
+    padding: 1px;
     text-align: center;
 }
 
 /* H1 styling */
 header h1 {
     font-weight: bold;
+    font-size: 5cap;
 }
 
 /* Image styling */
 #logo {
     background-image: url('assets/images/car-accidents.webp');
     background-size: cover;
-    height: 100px; /* Adjust the height as needed */
+    height: 100px;
+    /* Adjust the height as needed */
 }
 
 /* Navigation bar styling */
@@ -34,5 +36,71 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: blue; /* Change to your desired hover color */
+    color: blue;
+    /* Change to your desired hover color */
+}
+
+#hero-image {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#about-us {
+    text-align: center;
+    /* Center the text */
+    font-size: 7em;
+    /* Make the text largest */
+}
+
+#contact-us {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #contact-us {
+        text-align: left;
+        /* Adjust alignment for smaller screens */
+    }
+}
+
+#text {
+    text-align: center;
+
+}
+
+form {
+    width: 80%;
+    /* Adjust width as needed */
+    margin: 0 auto;
+    /* Center the form horizontally */
+    text-align: center;
+}
+
+/* Style radio buttons to display inline */
+form p {
+    margin: 0;
+}
+
+form label {
+    display: inline-block;
+    width: 60px;
+    /* Adjust width as needed */
+}
+
+form input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+    /* Adjust spacing between radio buttons */
+}
+
+/* Style other inputs as a list */
+form div {
+    margin-bottom: 10px;
+    /* Adjust spacing between input groups */
+}
+
+#footer {
+    background-color: rgba(232, 240, 242, 0.841);
+    padding: 100px;
+    
 }
