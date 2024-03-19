@@ -1,121 +1,38 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header styles */
+/* Header styling */
 header {
+    background-color: rgb(221, 190, 190);
+    padding: 20px;
     text-align: center;
-    padding: 20px 0;
-    background-color: #f0f0f0;
 }
 
+/* H1 styling */
 header h1 {
-    font-size: 36px;
-    margin: 10px 0;
+    font-weight: bold;
 }
 
-header h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+/* Image styling */
+#logo {
+    background-image: url('assets/images/car-accidents.webp');
+    background-size: cover;
+    height: 100px; /* Adjust the height as needed */
 }
 
+/* Navigation bar styling */
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: black;
 }
 
-/* Hero section styles */
-#hero-image {
-    text-align: center;
-    padding: 50px 0;
-}
-
-#hero-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-#text {
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-/* Contact section styles */
-section {
-    text-align: center;
-    padding: 50px 0;
-}
-
-section h4 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-section h6 {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-/* Form styles */
-#eform {
-    margin-top: 20px;
-}
-
-#eform div {
-    margin-bottom: 10px;
-}
-
-#eform label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-#eform input[type="text"],
-#eform input[type="email"],
-#eform input[type="reset"],
-#eform input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-}
-
-/* Footer styles */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-}
-
-/* Media queries for responsiveness */
-@media screen and (min-width: 768px) {
-    header {
-        padding: 30px 0;
-    }
-
-    header h1 {
-        font-size: 48px;
-    }
-
-    #hero-image {
-        padding: 100px 0;
-    }
-
-    section {
-        padding: 100px 0;
-    }
+nav ul li a:hover {
+    color: blue; /* Change to your desired hover color */
 }
