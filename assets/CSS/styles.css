@@ -1,6 +1,6 @@
 /* Header styling */
 header {
-    background-color: rgba(232, 240, 242, 0.841);
+    background-color: rgba(221, 240, 245, 0.841);
     padding: 1px;
     text-align: center;
 }
@@ -11,6 +11,37 @@ header h1 {
     font-size: 5cap;
 }
 
+#home,
+#about,
+#contact {
+    cursor: pointer;
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 2% ;
+    /* Make cursor change to pointer on hover */
+}
+
+/* Hover effect */
+#home:hover,
+#about:hover,
+#contact:hover {
+    color: blue;
+    /* Change text color to blue on hover */
+}
+
+/* Press effect */
+#home:active,
+#about:active,
+#contact:active {
+    color: red;
+    /* Change text color to red when pressed */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* Image styling */
 #logo {
     background-image: url('assets/images/car-accidents.webp');
@@ -19,41 +50,23 @@ header h1 {
     /* Adjust the height as needed */
 }
 
-/* Navigation bar styling */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-nav ul li a:hover {
-    color: blue;
-    /* Change to your desired hover color */
-}
-
 #hero-image {
     text-align: center;
-    margin-bottom: 2%;
+    margin-top: 3%;
+
 }
 
 #about-us {
     text-align: center;
     /* Center the text */
-    font-size: 7em;
+    font-size: 42px;
     /* Make the text largest */
 }
 
 #contact-us {
     text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 @media screen and (max-width: 768px) {
@@ -64,12 +77,15 @@ nav ul li a:hover {
 }
 
 #text {
+
     text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
 
 }
 
 form {
-    width: 80%;
+
     /* Adjust width as needed */
     margin: 0 auto;
     /* Center the form horizontally */
@@ -78,7 +94,7 @@ form {
 
 /* Style radio buttons to display inline */
 form p {
-    margin: 0;
+    margin-top margin-bottom: ;
 }
 
 form label {
@@ -89,18 +105,63 @@ form label {
 
 form input[type="radio"] {
     display: inline-block;
-    margin-right: 10px;
-    /* Adjust spacing between radio buttons */
+
 }
 
+form input[type="text"] {
+
+    background-color: rgb(202, 243, 243);
+    width: auto;
+    padding: 10px;
+    font-family: monospace;
+    border: 10px;
+
+}
+
+#f-name {
+    margin-right: 3%;
+    margin-left: 3%;
+
+}
+
+#s-name {
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+#e-mail {
+
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+#reset{
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 5%;
+}
+
+
+#submit{
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 5%;
+}
+
+
+
+
+
 /* Style other inputs as a list */
-form div {
+e-form {
     margin-bottom: 10px;
+    border: 10px;
+
     /* Adjust spacing between input groups */
 }
 
 #footer {
-    background-color: rgba(232, 240, 242, 0.841);
+    background-color: rgba(204, 233, 241, 0.841);
     padding: 100px;
-    
+
 }

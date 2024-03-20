@@ -35,15 +35,19 @@
             <h3> Accidents happen, but we resolve them</h3>
 
             <!--Navigation bar-->
-            <nav id=" navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about"></a>About</li>
-                    <li><a href="contact"></a>Contact</li>
-                </ul>
+            <nav id=" nav">
+
+                <a id="home" href=#top>Home</a>
+                <a id="about" href=#middle>About</a>
+                <a id="contact" href=#eform>Contact</a>
+
             </nav>
 
         </header>
+
+
+
+
     </section>
 
 
@@ -85,7 +89,7 @@
             </section>
 
 
-            <h4 id="contact-us">Contact us</h4>
+            <h1 id="contact-us">Contact us</h1>
 
 
 
@@ -93,61 +97,52 @@
 
             <!--Form-->
 
-            <section id="eform">
+            <span id="eform">
 
                 <form action="action_page.php" method="GET">
 
 
 
 
+                    <label>Mr.</label>
+                    <input type="radio" name="title">
 
+                    <label>Mrs.</label>
+                    <input type="radio" name="title">
 
-
-                    <p>
-
-                        <label>Mr.</label>
-                        <input type="radio" name="title">
-
-                        <label>Mrs.</label>
-                        <input type="radio" name="title">
-
-                        <label>Other</label>
-                        <input type="radio" name="title" </p>
-
-
-                    <p>
-                        <label for="fname"> First-Name: </label>
-                        <input type="text" id="fname" name="firstname" placeholder=" Name" maxlength="30" </p>
+                    <label>Other</label>
+                    <input type="radio" name="title">
 
 
 
 
-                    <p> <label for="Sname"> Surname: </label>
-                        <input type="text" id="Sname" name="Surname" placeholder=" Surname" maxlength="30" </p>
+                    <p><label id="f-name"> First-Name: </label>
+                        <input type="text" id="fname" name="firstname" placeholder=" Name" maxlength="30">
+                    </p>
 
 
 
 
-                    <p><label for="Email"> Email-Address </label>
+                    <p><label id="s-name"> Surname: </label>
+                        <input type="text" id="Sname" name="Surname" placeholder=" Surname" maxlength="30">
+                    </p>
+
+
+
+
+                    <p><label id="e-mail"> Email-Address </label>
                         <input type="text" id=" Email address" name=" email address" placeholder="jsmith@gmail.com"
-                            minlength="0" maxlength="200" </p>
+                            minlength="0" maxlength="200">
+                    </p>
+
+
+                    <input id="reset" type="reset">
 
 
 
+                    <input id="submit" type="submit">
 
-                    <p><input type="reset" </div></p>
-
-
-
-
-                    <p><input type="submit" </p>
-
-
-
-
-
-
-            </section>
+            </span>
 
 
 
