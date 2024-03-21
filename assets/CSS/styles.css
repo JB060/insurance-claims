@@ -1,9 +1,22 @@
 /* Header styling */
 header {
-    background-color: rgba(221, 240, 245, 0.841);
-    padding: 1px;
     text-align: center;
+    background-color: #cff5f7; /* Background color of the footer */
+    padding: 10px;
+    position: relative /* Needed for absolute positioning */
 }
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: black; /* Color of the line */
+}
+
+
 
 /* H1 styling */
 header h1 {
@@ -11,12 +24,18 @@ header h1 {
     font-size: 5cap;
 }
 
+#nav {
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 #home,
 #about,
 #contact {
     cursor: pointer;
     margin-right: 2%;
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 2% ;
     /* Make cursor change to pointer on hover */
 }
@@ -46,7 +65,7 @@ html {
 #logo {
     background-image: url('assets/images/car-accidents.webp');
     background-size: cover;
-    height: 100px;
+    height: 30px;
     /* Adjust the height as needed */
 }
 
@@ -57,30 +76,32 @@ html {
 }
 
 #about-us {
+
     text-align: center;
-    /* Center the text */
-    font-size: 42px;
-    /* Make the text largest */
+    margin-top: 4%;
+    margin-bottom: 1%;
+    font-size: 200%; /* twice the original size */
+    text-decoration: underline;
 }
 
 #contact-us {
     text-align: center;
     margin-top: 4%;
-    margin-bottom: 4%;
+    margin-bottom: 1%;
+    font-size: 200%; /* twice the original size */
+    text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
-    #contact-us {
-        text-align: left;
-        /* Adjust alignment for smaller screens */
-    }
-}
+#footer, #eform, #middle, #top {
+    width: 100%;
+    padding: 20px;
+
 
 #text {
 
     text-align: center;
     margin-top: 1%;
-    margin-bottom: 2%;
+    margin-bottom: 8%;
 
 }
 
@@ -119,20 +140,20 @@ form input[type="text"] {
 }
 
 #f-name {
-    margin-right: 3%;
-    margin-left: 3%;
+    margin-right: 1%;
+    margin-left: 1%;
 
 }
 
 #s-name {
-    margin-right: 3%;
-    margin-left: 3%;
+    margin-right: 1%;
+    margin-left: 1%;
 }
 
 #e-mail {
 
-    margin-right: 3%;
-    margin-left: 3%;
+    margin-right: 1%;
+    margin-left: 1%;
 }
 
 #reset{
@@ -160,8 +181,18 @@ e-form {
     /* Adjust spacing between input groups */
 }
 
-#footer {
-    background-color: rgba(204, 233, 241, 0.841);
-    padding: 100px;
+footer {
+    background-color: #cff5f7; /* Background color of the footer */
+    padding: 100px; /* Adjust as needed */
+    position: relative; /* Needed for absolute positioning */
+}
 
+footer::before {
+    content: ""; /* Necessary for pseudo-elements */
+    position: absolute; /* Position relative to the footer */
+    top: 0; /* Positioned at the top of the footer */
+    left: 0; /* Positioned at the left of the footer */
+    width: 100%; /* Full width */
+    height: 4px; /* Height of the line */
+    background-color: black; /* Color of the line */
 }
