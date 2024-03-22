@@ -1,9 +1,10 @@
 /* Header styling */
 header {
     text-align: center;
-    background-color: #cff5f7; /* Background color of the footer */
+    background-color: #cff5f7; /* Background color of the header */
     padding: 10px;
-    position: relative /* Needed for absolute positioning */
+    position: relative; /* Needed for absolute positioning */
+    margin: 0; /* Remove margin */
 }
 
 header::after {
@@ -16,13 +17,15 @@ header::after {
     background-color: black; /* Color of the line */
 }
 
-
-
 /* H1 styling */
 header h1 {
     font-weight: bold;
-    font-size: 5cap;
+    font-size: 2em; /* Adjust font size */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
 }
+
+
 
 #nav {
 
@@ -72,7 +75,11 @@ html {
 #hero-image {
     text-align: center;
     margin-top: 3%;
+}
 
+#hero-image img {
+    max-width: 100%;
+    height: auto;
 }
 
 #about-us {
@@ -171,8 +178,6 @@ form input[type="text"] {
 
 
 
-
-
 /* Style other inputs as a list */
 e-form {
     margin-bottom: 10px;
@@ -181,13 +186,23 @@ e-form {
     /* Adjust spacing between input groups */
 }
 
-footer {
+
+#f-info {
+
+ 
+
+
+}
+    
+  
+
+#footer {
     background-color: #cff5f7; /* Background color of the footer */
     padding: 100px; /* Adjust as needed */
     position: relative; /* Needed for absolute positioning */
 }
 
-footer::before {
+#footer::before {
     content: ""; /* Necessary for pseudo-elements */
     position: absolute; /* Position relative to the footer */
     top: 0; /* Positioned at the top of the footer */
